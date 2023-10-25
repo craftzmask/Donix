@@ -39,7 +39,11 @@ struct ContentView: View {
         VStack() {
             NavigationView {
                 List(items) { item in
-                    ItemView(item: item)
+                    NavigationLink {
+                        Text(item.name)
+                    } label: {
+                        ItemView(item: item)
+                    }
                 }
                 .navigationTitle("Donuts")
                 .searchable(text: $searchText)
