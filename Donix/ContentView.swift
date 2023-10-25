@@ -43,26 +43,29 @@ struct ContentView: View {
                 }
                 .navigationTitle("Donuts")
                 .searchable(text: $searchText)
-            }
-            
-            HStack {
-                Button(action: {
-                    
-                }, label: {
-                    Image(systemName: "square.and.pencil")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "chevron.backward")
+                                .imageScale(.large)
+                            Text("Lists")
+                        })
                         .font(.title2)
-                        .imageScale(.large)
-                })
-                Spacer()
-                Button(action: {
+                    }
                     
-                }, label: {
-                    Image(systemName: "plus.app")
-                        .font(.title2)
-                        .imageScale(.large)
-                })
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "plus")
+                                .font(.title2)
+                                .imageScale(.large)
+                        })
+                    }
+                }
             }
-            .padding(.horizontal)
         }
     }
 }
