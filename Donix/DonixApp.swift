@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct DonixApp: App {
+struct DonixApp: App {    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ItemsView()
         }
     }
 }

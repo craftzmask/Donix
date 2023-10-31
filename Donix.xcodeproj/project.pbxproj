@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		B45235862AF08F06008C9F3C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45235852AF08F06008C9F3C /* DetailView.swift */; };
 		B45235882AF0B4D1008C9F3C /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45235872AF0B4D1008C9F3C /* DetailEditView.swift */; };
+		B452358A2AF0C1E9008C9F3C /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45235892AF0C1E9008C9F3C /* AddItemView.swift */; };
 		B455F0C12AE8A8F2006579A3 /* DonixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455F0C02AE8A8F2006579A3 /* DonixApp.swift */; };
-		B455F0C32AE8A8F2006579A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455F0C22AE8A8F2006579A3 /* ContentView.swift */; };
+		B455F0C32AE8A8F2006579A3 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455F0C22AE8A8F2006579A3 /* ItemsView.swift */; };
 		B455F0C52AE8A8F4006579A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B455F0C42AE8A8F4006579A3 /* Assets.xcassets */; };
 		B455F0C82AE8A8F4006579A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B455F0C72AE8A8F4006579A3 /* Preview Assets.xcassets */; };
 		B455F0F82AEF3038006579A3 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455F0F72AEF3038006579A3 /* ItemView.swift */; };
@@ -20,9 +21,10 @@
 /* Begin PBXFileReference section */
 		B45235852AF08F06008C9F3C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		B45235872AF0B4D1008C9F3C /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		B45235892AF0C1E9008C9F3C /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		B455F0BD2AE8A8F2006579A3 /* Donix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B455F0C02AE8A8F2006579A3 /* DonixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonixApp.swift; sourceTree = "<group>"; };
-		B455F0C22AE8A8F2006579A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B455F0C22AE8A8F2006579A3 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		B455F0C42AE8A8F4006579A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B455F0C72AE8A8F4006579A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B455F0F72AEF3038006579A3 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -60,13 +62,14 @@
 			isa = PBXGroup;
 			children = (
 				B455F0C02AE8A8F2006579A3 /* DonixApp.swift */,
-				B455F0C22AE8A8F2006579A3 /* ContentView.swift */,
+				B455F0C22AE8A8F2006579A3 /* ItemsView.swift */,
 				B455F0C42AE8A8F4006579A3 /* Assets.xcassets */,
 				B455F0C62AE8A8F4006579A3 /* Preview Content */,
 				B455F0F72AEF3038006579A3 /* ItemView.swift */,
 				B455F0F92AEF3109006579A3 /* Item.swift */,
 				B45235852AF08F06008C9F3C /* DetailView.swift */,
 				B45235872AF0B4D1008C9F3C /* DetailEditView.swift */,
+				B45235892AF0C1E9008C9F3C /* AddItemView.swift */,
 			);
 			path = Donix;
 			sourceTree = "<group>";
@@ -150,7 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B455F0FA2AEF3109006579A3 /* Item.swift in Sources */,
-				B455F0C32AE8A8F2006579A3 /* ContentView.swift in Sources */,
+				B455F0C32AE8A8F2006579A3 /* ItemsView.swift in Sources */,
+				B452358A2AF0C1E9008C9F3C /* AddItemView.swift in Sources */,
 				B455F0F82AEF3038006579A3 /* ItemView.swift in Sources */,
 				B45235862AF08F06008C9F3C /* DetailView.swift in Sources */,
 				B455F0C12AE8A8F2006579A3 /* DonixApp.swift in Sources */,
