@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct DetailView: View {
-    let item: Item
+    var item: Item
+    @State var isPresentingEditView = false
     
     var body: some View {
         List {
@@ -28,7 +29,25 @@ struct DetailView: View {
         .navigationTitle(item.name)
         .toolbar {
             Button("Edit") {
-                
+                isPresentingEditView = true
+            }
+        }
+        .sheet(isPresented: $isPresentingEditView) {
+            NavigationStack {
+                DetailEditView()
+                    .navigationTitle(item.name)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isPresentingEditView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Save") {
+                                isPresentingEditView = false
+                            }
+                        }
+                    }
             }
         }
     }
