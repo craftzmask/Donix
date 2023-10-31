@@ -12,10 +12,10 @@ struct ContentView: View {
     
     var body: some View {
         VStack() {
-            NavigationView {
+            NavigationStack {
                 List(Item.sampleData) { item in
                     NavigationLink {
-                        Text(item.name)
+                        DetailView(item: item)
                     } label: {
                         ItemView(item: item)
                     }
