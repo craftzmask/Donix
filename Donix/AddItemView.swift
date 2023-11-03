@@ -25,16 +25,29 @@ struct AddItemView: View {
             
             Section(header: Text("Select Items")) {
                 List(Item.sampleData) { item in
-                    HStack {
-                        Text(item.name)
-                        Spacer()
-                        TextField(String(item.quantity), value: $newItemQuantity, format: .number)
-                            .frame(width: 20)
-                            .keyboardType(.numberPad)
+                    GeometryReader { metrics in
+                        let w = metrics.size.width
+                        HStack(spacing: 0) {
+                            Text(item.name)
+                                .frame(width: w * 0.50, alignment: .leading)
+                            Spacer()
+                            TextField(String(item.quantity), value: $newItemQuantity, format: .number)
+                                .frame(width: w * 0.10)
+                                .multilineTextAlignment(.trailing)
+                                .textFieldStyle(.roundedBorder)
+                                .keyboardType(.numberPad)
+                            
+                            Button(action: {
+                                print("tap add")
+                            }) {
+                                Image(systemName: "plus.circle.fill")
+                            }
+                            .frame(width: w * 0.30, alignment: .trailing)
+                        }
                     }
-                }
-                .onTapGesture(count: 2) {
-                    print("Double taps")
+                    .onTapGesture(count: 2) {
+                        print("Double taps")
+                    }
                 }
             }
         }
