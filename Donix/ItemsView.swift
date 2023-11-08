@@ -58,11 +58,6 @@ struct ItemsView: View {
                                                 isPresentingAddItemView = false
                                             }
                                         }
-                                        ToolbarItem(placement: .confirmationAction) {
-                                            Button("Done") {
-                                                isPresentingAddItemView = false
-                                            }
-                                        }
                                     }
                             }
                         }
